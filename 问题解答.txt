@@ -1,0 +1,7 @@
+1----retrofit动态修改url地址：
+	https://www.jianshu.com/p/3e4f7f451945
+	
+2----如何获取Android project下 build.gradle、
+gradle.properties、local.properties文件中定义的属性或变量
+	https://blog.csdn.net/u013347784/article/details/104678957
+	

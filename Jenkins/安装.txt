@@ -1,0 +1,33 @@
+jenkins安装使用
+
+mac安装文档（流程大致相同）：
+https://blog.51cto.com/u_15294985/5132960?b=totalstatistic
+
+
+解锁Jenkins
+C:\ProgramData\Jenkins\.jenkins\secrets\initialAdminPassword
+
+用户名
+allison
+Lis123456.
+李胜
+17601312864@163.com
+
+jenkins默认路径
+C:\ProgramData\Jenkins\.jenkins\tools\hudson.plugins.gradle.GradleInstallation
+
+jenkins url
+http://localhost:8080/
+
+jenkins插件下载地址
+https://plugins.jenkins.io/
+
+重启jenkins
+java -jar Jenkins.war
+
+触发远程构建
+JENKINS_URL/job/DemoProject/build?token=TOKEN_NAME 或者 
+/buildWithParameters?token=TOKEN_NAME
+
+Jenkins+Github实现自动触发构建
+https://www.jianshu.com/p/07b60b788088
