@@ -79,3 +79,8 @@ Execution failed for task ':app:processDebugResources'.
       > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
          > Android resource compilation failed
            ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+		   
+		   2、解决方案
+		   配置Jenkins的全局属性
+		   ANDROID_hOME
+		   GRADLE_USER_HOME
