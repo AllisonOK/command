@@ -1,0 +1,23 @@
+
+adb wifi调试
+adb tcpip 5555
+adb connect 手机ip（如adb connect 192.168.1.101）
+adb devices验证是否连接成功
+给指定的手机安装程序
+adb -s 手机编码 install xx.apk
+
+添加DeviceOwner
+adb shell dpm set-device-owner com.afwsamples.testdpc/.DeviceAdminReceiver
+
+移除DeviceOwner
+adb shell dpm remove-active-admin com.afwsamples.testdpc/.DeviceAdminReceiver
+
+查看所有包名
+adb shell pm list packages
+
+启动
+adb shell am start -n 包名/MainActivity名
+
+adb shell pm clear com.abupdate.appcenter
+
+adb uninstall jp.smartmobile.quickdischarge
