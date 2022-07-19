@@ -1,0 +1,81 @@
+
+1、问题详情
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
+   > Failed to transform appcompat-1.4.2.aar (androidx.appcompat:appcompat:1.4.2) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.category=library, org.gradle.dependency.bundling=external, org.gradle.libraryelements=aar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\846bd1e6ef12a6d68419ac9e045844bf\transformed\appcompat-1.4.2.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\873b3e7b60638746a211f3b3f7803d14\transformed\androidx.appcompat: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.category=library, org.gradle.dependency.bundling=external, org.gradle.libraryelements=aar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).
+           
+               
+   > Failed to transform core-1.7.0.aar (androidx.core:core:1.7.0) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d8338c189490aee58604e111af57865f\transformed\core-1.7.0.
+         > Android resource compilation failed
+           ERROR:AAPT: C:\Windows\System32\config\systemprofile\.gradle\caches\transforms-3\d07d5c74bb7ff5c9e58b7c88b1ccee31\transformed\androidx.core: error: 系统找不到指定的文件。 (2).

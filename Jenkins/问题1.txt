@@ -1,3 +1,5 @@
+
+1、问题详情
 * Where:
 Build file 'C:\ProgramData\Jenkins\.jenkins\workspace\Java\build.gradle' line: 3
 
@@ -20,3 +22,9 @@ BUILD FAILED in 4s
 Build step 'Invoke Gradle script' changed build result to FAILURE
 Build step 'Invoke Gradle script' marked build as failure
 Finished: FAILURE
+
+2、导致原因
+没有上传settings.properties
+
+3、解决方案
+上传settings.properties
