@@ -2,9 +2,15 @@
 wifi
 Abup@2020
 
+MDM控制台-正式环境
 https://emm.abupdate.com/emm-admin/login.html
 admin
 admin@1010
+
+MDM控制台-开发环境
+https://dev-platform.easycontrol.io/mdm-web/Login
+lisheng
+Lis123456.
 
 腾讯邮箱
 lisheng@adups.com
@@ -24,9 +30,6 @@ https://developers.google.cn/android/work/overview?authuser=3
 安卓管理接口
 https://developers.google.cn/android/management?authuser=3
 
-公司邮箱账号
-lisheng@adups.com
-
 DPC简介
 https://developer.android.com/work/dpc/build-dpc
 
@@ -34,13 +37,6 @@ dpc项目
 https://github.com/googlesamples/android-testdpc
 
 https://github.com/googlesamples/android-testdpc.git
-
-/data/user/0/com.abupdate.appcenter/files/
-
-MDM控制台-开发环境
-https://dev-platform.easycontrol.io/mdm-web/Login
-lisheng
-Lis123456.
 
 redmine.adups.com    
 lisheng     
@@ -51,11 +47,6 @@ ssh-keygen -t rsa -C "xxx@xxx.com"
 C:\Users\86176\.ssh\id_rsa.pub
 Enter passphrase for key '/c/Users/86176/.ssh/id_rsa':
 Lis12345
-
-mdm测试账号
-lisheng
-Lis123456.
-test_ls_oHq9v0
 
 
 
