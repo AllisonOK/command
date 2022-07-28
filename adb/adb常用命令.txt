@@ -21,3 +21,13 @@ adb shell am start -n 包名/MainActivity名
 adb shell pm clear com.abupdate.appcenter
 
 adb uninstall jp.smartmobile.quickdischarge
+
+截取fb0界面到sdcard，并导入到电脑，可以进行查看。
+adb shell screencap -p sdcard/fb0.png
+
+adb pull /sdcard/fb0.png
+
+adb shell rm /sdcard/fb0.png
+
+截取fb1界面到sdcard，文件名为fb1.png
+adb shell screencap -d /dev/graphics/fb1 sdcard/fb1.png
