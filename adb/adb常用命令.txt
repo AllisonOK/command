@@ -31,3 +31,10 @@ adb shell rm /sdcard/fb0.png
 
 截取fb1界面到sdcard，文件名为fb1.png
 adb shell screencap -d /dev/graphics/fb1 sdcard/fb1.png
+
+执行命令，抓取日志
+adb logcat -v time >.\\logcat.log      开始抓取日志，并保存到当前路径下，文件名为 logcat.log
+
+Ctrl+c    结束日志抓取
+
+adb logcat -c 清空旧日志
