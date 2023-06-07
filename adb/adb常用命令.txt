@@ -1,4 +1,12 @@
 
+adb 指令参考资料
+	https://www.cnblogs.com/hyf20131113/p/10919586.html
+	
+	https://zhuanlan.zhihu.com/p/453928819
+	
+	https://zhuanlan.zhihu.com/p/567024111
+
+
 adb wifi调试
 adb tcpip 5555
 adb connect 手机ip（如adb connect 192.168.1.101）
@@ -8,9 +16,13 @@ adb -s 手机编码 install xx.apk
 
 添加DeviceOwner
 adb shell dpm set-device-owner com.afwsamples.testdpc/.DeviceAdminReceiver
+adb shell dpm set-device-owner com.easycontrol.emm/.receiver.DeviceOwnerReceiver
+com.abupdate.appcenter
 
 移除DeviceOwner
 adb shell dpm remove-active-admin com.afwsamples.testdpc/.DeviceAdminReceiver
+adb shell dpm remove-active-admin com.easycontrol.emm/.receiver.DeviceOwnerReceiver
+com.easycontrol.emm
 
 查看所有包名
 adb shell pm list packages
@@ -38,3 +50,30 @@ adb logcat -v time >.\\logcat.log      开始抓取日志，并保存到当前�
 Ctrl+c    结束日志抓取
 
 adb logcat -c 清空旧日志
+
+adb logcat -s "tag" adb打印指定tag的logcat
+
+adb logcat | findstr tag名称
+
+复制文件
+copy  E:\music\*陈奕迅*.*  E:\test
+
+查看系统Linux kernel版本号
+cat /proc/version
+
+获取build number
+adb shell getprop ro.build.display.id
+
+监听手机打开的页面所属包名
+adb shell am monitor
+
+adb命令查看应用权限赋予情况
+adb shell dumpsys package com.test.abc
+
+应用管理
+	查看应用列表
+		adb shell pm list packages  [-f] [-d] [-e] [-s] [-3] [-i] [-u] [--user USER_ID] [FILTER]
+		
+如何查看任务栈		
+adb shell dumpsys activity -p com.packagename.packagename > taskinfos.txt
+搜索关键字：Hist、TaskId

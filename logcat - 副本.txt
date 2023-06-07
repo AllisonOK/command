@@ -1,0 +1,299 @@
+04-10 18:06:16.245 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:29) pushNumber = 45
+04-10 18:06:16.245 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:30) Emq onMessageReceived==> {"message":1,"taskId":"40164"}
+04-10 18:06:16.246 18915 31162 D |MDM3.3-Log|: (EmqPushListener.java:45) type = 1; taskId = 40164
+04-10 18:06:16.246 18915 31162 D |MDM3.3-Log|: (TaskWork.java:135) 请求任务接口--->40164
+04-10 18:06:16.289 18915 23271 D |MDM3.3-Log|: (Worker.java:85) TaskWork trigger by push doWork------------------pool-17-thread-4
+04-10 18:06:16.553 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:06:16.554 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/control
+04-10 18:06:16.554 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:06:16.554 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:06:16.555 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 31
+04-10 18:06:16.555 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:06:16.556 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"taskId":40164,"intfType":"1"}
+04-10 18:06:16.559 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000,"data":[{"extend":[{"isLock":2,"overdueDate":1681119998000,"amount":100.0,"afterDay":0,"beforeDay":0}],"name":"labelPolicy","value":"1","version":1681121175774}],"version":40164,"taskId":40164}
+04-10 18:06:16.561 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:258 ms
+04-10 18:06:16.561 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:06:16.568 18915 23271 D |MDM3.3-Log|: (TaskWork.java:356) TaskWork response success,send live data message--
+04-10 18:06:16.569 18915 18915 D |MDM3.3-Log|: (EcmService.java:254) get ACTION_DATA TaskResponse---------
+04-10 18:06:16.570 18915 18915 D |MDM3.3-Log|: (CommandAdapter.java:68) executeAction ==> TaskResponse{result=1000, taskId=40164, md5='', data=[TaskData{name='labelPolicy', value=1, version=1681121175774, extend='[{"isLock":2,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}], deviceData=null}
+04-10 18:06:16.579 18915 19094 D |MDM3.3-Log|: (CommandAdapter.java:90) filter task true ->TaskData{name='labelPolicy', value=1, version=1681121175774, extend='[{"isLock":2,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}
+04-10 18:06:16.588 18915 19094 D |MDM3.3-Log|: (CommandAdapter.java:111) saveTasks==================40164
+04-10 18:06:16.589 18915 19094 I |MDM3.3-Log|: (LespagoLockUtils.java:86) overdue lock
+04-10 18:06:16.590 18915 19094 D |MDM3.3-Log|: (KioskUtils.java:59) execute lock(alertId->0,alertType->101)
+04-10 18:06:16.597 18915 18915 D |MDM3.3-Log|: (EcmService.java:241) getReportTasks onChanged-----
+04-10 18:06:16.598 18915 19094 D |MDM3.3-Log|: (KioskUtils.java:78) update==>LockRecord{id=1, alertId=0, alertType=101, lock=1, lockTime=1681121176593}
+04-10 18:06:16.599 18915 18915 D |MDM3.3-Log|: (LockFragment.java:71) LOCK_MESSAGE_CHANGE--->change
+04-10 18:06:16.605 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:06:16.672 18915 22818 D |MDM3.3-Log|: (ReportWork.java:57) report worker  doWork--------0
+04-10 18:06:17.140 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:06:17.141 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/exeReport
+04-10 18:06:17.141 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:06:17.142 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:06:17.142 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 212
+04-10 18:06:17.143 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:06:17.143 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"data":[{"extend":"[{\"isLock\":2,\"overdueDate\":1681119998000,\"amount\":100,\"afterDay\":0,\"beforeDay\":0}]","name":"labelPolicy","result":"1","value":1,"version":"1681121175774"}],"status":1,"taskId":40164}
+04-10 18:06:17.145 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000}
+04-10 18:06:17.147 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:465 ms
+04-10 18:06:17.148 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:07:18.375 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:29) pushNumber = 46
+04-10 18:07:18.376 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:30) Emq onMessageReceived==> {"message":1,"taskId":"40165"}
+04-10 18:07:18.377 18915 31162 D |MDM3.3-Log|: (EmqPushListener.java:45) type = 1; taskId = 40165
+04-10 18:07:18.377 18915 31162 D |MDM3.3-Log|: (TaskWork.java:135) 请求任务接口--->40165
+04-10 18:07:18.424 18915 23239 D |MDM3.3-Log|: (Worker.java:85) TaskWork trigger by push doWork------------------pool-17-thread-3
+04-10 18:07:18.687 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:07:18.687 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:29) pushNumber = 47
+04-10 18:07:18.688 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/control
+04-10 18:07:18.688 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:30) Emq onMessageReceived==> {"message":1,"taskId":"40166"}
+04-10 18:07:18.688 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:07:18.689 18915 31162 D |MDM3.3-Log|: (EmqPushListener.java:45) type = 1; taskId = 40166
+04-10 18:07:18.690 18915 31162 D |MDM3.3-Log|: (TaskWork.java:135) 请求任务接口--->40166
+04-10 18:07:18.690 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:07:18.691 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 31
+04-10 18:07:18.691 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:07:18.692 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"taskId":40165,"intfType":"1"}
+04-10 18:07:18.698 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000,"data":[{"extend":[{"isLock":1,"overdueDate":1681119998000,"amount":100.0,"afterDay":0,"beforeDay":0}],"name":"labelPolicy","value":"1","version":1681121236866}],"version":40165,"taskId":40165}
+04-10 18:07:18.699 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:258 ms
+04-10 18:07:18.700 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:07:18.706 18915 23239 D |MDM3.3-Log|: (TaskWork.java:356) TaskWork response success,send live data message--
+04-10 18:07:18.709 18915 18915 D |MDM3.3-Log|: (EcmService.java:254) get ACTION_DATA TaskResponse---------
+04-10 18:07:18.710 18915 18915 D |MDM3.3-Log|: (CommandAdapter.java:68) executeAction ==> TaskResponse{result=1000, taskId=40165, md5='', data=[TaskData{name='labelPolicy', value=1, version=1681121236866, extend='[{"isLock":1,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}], deviceData=null}
+04-10 18:07:18.714 18915 19094 D |MDM3.3-Log|: (CommandAdapter.java:90) filter task true ->TaskData{name='labelPolicy', value=1, version=1681121236866, extend='[{"isLock":1,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}
+04-10 18:07:18.717 18915 19094 D |MDM3.3-Log|: (CommandAdapter.java:111) saveTasks==================40165
+04-10 18:07:18.720 18915 19094 I |MDM3.3-Log|: (LespagoLockUtils.java:80) overdue unlock
+04-10 18:07:18.721 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:07:18.721 18915 19094 D |MDM3.3-Log|: (KioskUtils.java:123) 执行unLock，alertId=0  alertType=101
+04-10 18:07:18.722 18915 21183 D |MDM3.3-Log|: (KioskUtils.java:130) push 触发的解锁，直接执行
+04-10 18:07:18.731 18915 18915 D |MDM3.3-Log|: (KioskUtils.java:161) execute unlock
+04-10 18:07:18.734 18915 18915 D |MDM3.3-Log|: (EcmService.java:241) getReportTasks onChanged-----
+04-10 18:07:18.735 18915 18915 E |MDM3.3-Log|: (KioskUtils.java:286) checkAppKiosk===>null22
+04-10 18:07:18.735 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1239) clearKiosk(com.easycontrol.emm)
+04-10 18:07:18.892 18915 18915 E |MDM3.3-Log|: (ActivityThread.java:4726) DeviceAdminReceiver#receive action:android.app.action.LOCK_TASK_EXITING
+04-10 18:07:18.896 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:07:18.896 18915 19149 D |MDM3.3-Log|: (Worker.java:85) TaskWork trigger by push doWork------------------pool-17-thread-1
+04-10 18:07:18.901 18915 23271 D |MDM3.3-Log|: (ReportWork.java:57) report worker  doWork--------0
+04-10 18:07:19.188 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:07:19.188 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/control
+04-10 18:07:19.189 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:07:19.189 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:07:19.189 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 31
+04-10 18:07:19.190 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:07:19.191 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"taskId":40166,"intfType":"1"}
+04-10 18:07:19.195 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000,"data":[{"extend":[{"isLock":2,"overdueDate":1681119998000,"amount":100.0,"afterDay":0,"beforeDay":0}],"name":"labelPolicy","value":"1","version":1681121237990}],"version":40166,"taskId":40166}
+04-10 18:07:19.195 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:289 ms
+04-10 18:07:19.196 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:07:19.200 18915 19149 D |MDM3.3-Log|: (TaskWork.java:356) TaskWork response success,send live data message--
+04-10 18:07:19.201 18915 18915 D |MDM3.3-Log|: (EcmService.java:254) get ACTION_DATA TaskResponse---------
+04-10 18:07:19.201 18915 18915 D |MDM3.3-Log|: (CommandAdapter.java:68) executeAction ==> TaskResponse{result=1000, taskId=40166, md5='', data=[TaskData{name='labelPolicy', value=1, version=1681121237990, extend='[{"isLock":2,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}], deviceData=null}
+04-10 18:07:19.203 18915 19094 D |MDM3.3-Log|: (CommandAdapter.java:90) filter task true ->TaskData{name='labelPolicy', value=1, version=1681121237990, extend='[{"isLock":2,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}
+04-10 18:07:19.207 18915 19094 D |MDM3.3-Log|: (CommandAdapter.java:111) saveTasks==================40166
+04-10 18:07:19.208 18915 19094 I |MDM3.3-Log|: (LespagoLockUtils.java:86) overdue lock
+04-10 18:07:19.211 18915 19094 D |MDM3.3-Log|: (KioskUtils.java:59) execute lock(alertId->0,alertType->101)
+04-10 18:07:19.218 18915 21183 D |MDM3.3-Log|: (KioskUtils.java:78) update==>LockRecord{id=1, alertId=0, alertType=101, lock=1, lockTime=1681121239213}
+04-10 18:07:19.218 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:07:19.218 18915 18915 D |MDM3.3-Log|: (KioskUtils.java:91) lock execute----
+04-10 18:07:19.219 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1177) setKiosk(com.easycontrol.emm)
+04-10 18:07:19.286 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1202) setKiosk complete-----
+04-10 18:07:19.290 18915 22818 D |MDM3.3-Log|: (ReportWork.java:57) report worker  doWork--------0
+04-10 18:07:19.318 18915  2487 D |MDM3.3-Log|: (KioskActivity.java:100) LockRecord has data ,execute lock
+04-10 18:07:19.319 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:853) setLockTaskFeatures(GLOBAL_ACTIONS|SYSTEM_INFO)
+04-10 18:07:19.344 18915 18915 D |MDM3.3-Log|: (EcmService.java:241) getReportTasks onChanged-----
+04-10 18:07:19.345 18915 18915 E |MDM3.3-Log|: (ActivityThread.java:4726) DeviceAdminReceiver#receive action:android.app.action.LOCK_TASK_ENTERING
+04-10 18:07:19.345 18915 18915 D |MDM3.3-Log|: (KioskActivity.java:136) switchByCommand====>kiosk_mode_lock
+04-10 18:07:19.346 18915 18915 D |MDM3.3-Log|: (KioskActivity.java:197) 切换fragment---com.easycontrol.dpc.kiosk.LockFragment
+04-10 18:07:19.377 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:807) setLockTaskPackages([com.easycontrol.emm, com.android.settings, com.android.phone, android, com.emoji.keyboard.touchpal.customization, com.android.incallui, com.android.server.telecom, com.android.dialer, com.android.htcdialer, com.google.android.dialer, com.asus.asusincallui, com.device.lespago])
+04-10 18:07:19.390 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:07:19.544 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:07:19.545 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/exeReport
+04-10 18:07:19.545 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:07:19.545 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:07:19.546 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 212
+04-10 18:07:19.546 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:07:19.547 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"data":[{"extend":"[{\"isLock\":2,\"overdueDate\":1681119998000,\"amount\":100,\"afterDay\":0,\"beforeDay\":0}]","name":"labelPolicy","result":"1","value":1,"version":"1681121237990"}],"status":1,"taskId":40166}
+04-10 18:07:19.548 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000}
+04-10 18:07:19.549 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:250 ms
+04-10 18:07:19.549 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:07:20.114 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:07:20.114 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/exeReport
+04-10 18:07:20.115 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:07:20.115 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:07:20.115 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 212
+04-10 18:07:20.116 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:07:20.116 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"data":[{"extend":"[{\"isLock\":1,\"overdueDate\":1681119998000,\"amount\":100,\"afterDay\":0,\"beforeDay\":0}]","name":"labelPolicy","result":"1","value":1,"version":"1681121236866"}],"status":1,"taskId":40165}
+04-10 18:07:20.118 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000}
+04-10 18:07:20.118 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:303 ms
+04-10 18:07:20.118 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:08:19.319 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:29) pushNumber = 48
+04-10 18:08:19.319 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:30) Emq onMessageReceived==> {"message":1,"taskId":"40167"}
+04-10 18:08:19.320 18915 31162 D |MDM3.3-Log|: (EmqPushListener.java:45) type = 1; taskId = 40167
+04-10 18:08:19.320 18915 31162 D |MDM3.3-Log|: (TaskWork.java:135) 请求任务接口--->40167
+04-10 18:08:19.366 18915 23239 D |MDM3.3-Log|: (Worker.java:85) TaskWork trigger by push doWork------------------pool-17-thread-3
+04-10 18:08:19.735 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:08:19.736 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/control
+04-10 18:08:19.737 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:08:19.737 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:08:19.738 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 31
+04-10 18:08:19.738 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:08:19.739 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"taskId":40167,"intfType":"1"}
+04-10 18:08:19.741 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000,"data":[{"extend":[{"isLock":1,"overdueDate":1681119998000,"amount":100.0,"afterDay":0,"beforeDay":0}],"name":"labelPolicy","value":"1","version":1681121298907}],"version":40167,"taskId":40167}
+04-10 18:08:19.742 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:323 ms
+04-10 18:08:19.742 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:08:19.750 18915 23239 D |MDM3.3-Log|: (TaskWork.java:356) TaskWork response success,send live data message--
+04-10 18:08:19.752 18915 18915 D |MDM3.3-Log|: (EcmService.java:254) get ACTION_DATA TaskResponse---------
+04-10 18:08:19.753 18915 18915 D |MDM3.3-Log|: (CommandAdapter.java:68) executeAction ==> TaskResponse{result=1000, taskId=40167, md5='', data=[TaskData{name='labelPolicy', value=1, version=1681121298907, extend='[{"isLock":1,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}], deviceData=null}
+04-10 18:08:19.758 18915 21183 D |MDM3.3-Log|: (CommandAdapter.java:90) filter task true ->TaskData{name='labelPolicy', value=1, version=1681121298907, extend='[{"isLock":1,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}
+04-10 18:08:19.769 18915 21183 D |MDM3.3-Log|: (CommandAdapter.java:111) saveTasks==================40167
+04-10 18:08:19.775 18915 21183 I |MDM3.3-Log|: (LespagoLockUtils.java:80) overdue unlock
+04-10 18:08:19.776 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:08:19.777 18915 21183 D |MDM3.3-Log|: (KioskUtils.java:123) 执行unLock，alertId=0  alertType=101
+04-10 18:08:19.779 18915 19094 D |MDM3.3-Log|: (KioskUtils.java:130) push 触发的解锁，直接执行
+04-10 18:08:19.784 18915 18915 D |MDM3.3-Log|: (KioskUtils.java:161) execute unlock
+04-10 18:08:19.785 18915 18915 D |MDM3.3-Log|: (LockFragment.java:71) LOCK_MESSAGE_CHANGE--->clear_kiosk
+04-10 18:08:19.785 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1239) clearKiosk(com.easycontrol.emm)
+04-10 18:08:19.833 18915 18915 E |MDM3.3-Log|: (KioskUtils.java:286) checkAppKiosk===>null22
+04-10 18:08:19.834 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1239) clearKiosk(com.easycontrol.emm)
+04-10 18:08:19.868 18915 18915 D |MDM3.3-Log|: (EcmService.java:241) getReportTasks onChanged-----
+04-10 18:08:19.869 18915 18915 E |MDM3.3-Log|: (ActivityThread.java:4726) DeviceAdminReceiver#receive action:android.app.action.LOCK_TASK_EXITING
+04-10 18:08:19.996 18915 19149 D |MDM3.3-Log|: (ReportWork.java:57) report worker  doWork--------0
+04-10 18:08:20.004 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:08:20.537 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:08:20.537 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:29) pushNumber = 49
+04-10 18:08:20.538 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:30) Emq onMessageReceived==> {"message":1,"taskId":"40168"}
+04-10 18:08:20.538 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/exeReport
+04-10 18:08:20.538 18915 31162 D |MDM3.3-Log|: (EmqPushListener.java:45) type = 1; taskId = 40168
+04-10 18:08:20.539 18915 31162 D |MDM3.3-Log|: (TaskWork.java:135) 请求任务接口--->40168
+04-10 18:08:20.540 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:08:20.543 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:08:20.543 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 212
+04-10 18:08:20.544 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:08:20.545 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"data":[{"extend":"[{\"isLock\":1,\"overdueDate\":1681119998000,\"amount\":100,\"afterDay\":0,\"beforeDay\":0}]","name":"labelPolicy","result":"1","value":1,"version":"1681121298907"}],"status":1,"taskId":40167}
+04-10 18:08:20.548 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000}
+04-10 18:08:20.548 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:532 ms
+04-10 18:08:20.549 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:08:20.586 18915 22818 D |MDM3.3-Log|: (Worker.java:85) TaskWork trigger by push doWork------------------pool-17-thread-2
+04-10 18:08:20.797 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:08:20.797 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/control
+04-10 18:08:20.798 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:08:20.798 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:08:20.798 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 31
+04-10 18:08:20.798 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:08:20.798 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"taskId":40168,"intfType":"1"}
+04-10 18:08:20.799 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000,"data":[{"extend":[{"isLock":2,"overdueDate":1681119998000,"amount":100.0,"afterDay":0,"beforeDay":0}],"name":"labelPolicy","value":"1","version":1681121299981}],"version":40168,"taskId":40168}
+04-10 18:08:20.799 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:208 ms
+04-10 18:08:20.800 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:08:20.805 18915 22818 D |MDM3.3-Log|: (TaskWork.java:356) TaskWork response success,send live data message--
+04-10 18:08:20.807 18915 18915 D |MDM3.3-Log|: (EcmService.java:254) get ACTION_DATA TaskResponse---------
+04-10 18:08:20.807 18915 18915 D |MDM3.3-Log|: (CommandAdapter.java:68) executeAction ==> TaskResponse{result=1000, taskId=40168, md5='', data=[TaskData{name='labelPolicy', value=1, version=1681121299981, extend='[{"isLock":2,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}], deviceData=null}
+04-10 18:08:20.809 18915 21183 D |MDM3.3-Log|: (CommandAdapter.java:90) filter task true ->TaskData{name='labelPolicy', value=1, version=1681121299981, extend='[{"isLock":2,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}
+04-10 18:08:20.812 18915 21183 D |MDM3.3-Log|: (CommandAdapter.java:111) saveTasks==================40168
+04-10 18:08:20.815 18915 21183 I |MDM3.3-Log|: (LespagoLockUtils.java:86) overdue lock
+04-10 18:08:20.819 18915 21183 D |MDM3.3-Log|: (KioskUtils.java:59) execute lock(alertId->0,alertType->101)
+04-10 18:08:20.824 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:08:20.828 18915 21183 D |MDM3.3-Log|: (KioskUtils.java:78) update==>LockRecord{id=1, alertId=0, alertType=101, lock=1, lockTime=1681121300822}
+04-10 18:08:20.828 18915 18915 D |MDM3.3-Log|: (KioskUtils.java:91) lock execute----
+04-10 18:08:20.829 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1177) setKiosk(com.easycontrol.emm)
+04-10 18:08:20.944 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1202) setKiosk complete-----
+04-10 18:08:20.948 18915 23271 D |MDM3.3-Log|: (ReportWork.java:57) report worker  doWork--------0
+04-10 18:08:20.985 18915  2487 D |MDM3.3-Log|: (KioskActivity.java:100) LockRecord has data ,execute lock
+04-10 18:08:20.986 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:853) setLockTaskFeatures(GLOBAL_ACTIONS|SYSTEM_INFO)
+04-10 18:08:21.035 18915 18915 D |MDM3.3-Log|: (EcmService.java:241) getReportTasks onChanged-----
+04-10 18:08:21.036 18915 18915 E |MDM3.3-Log|: (ActivityThread.java:4726) DeviceAdminReceiver#receive action:android.app.action.LOCK_TASK_ENTERING
+04-10 18:08:21.037 18915 18915 D |MDM3.3-Log|: (KioskActivity.java:136) switchByCommand====>kiosk_mode_lock
+04-10 18:08:21.037 18915 18915 D |MDM3.3-Log|: (KioskActivity.java:197) 切换fragment---com.easycontrol.dpc.kiosk.LockFragment
+04-10 18:08:21.093 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:807) setLockTaskPackages([com.easycontrol.emm, com.android.settings, com.android.phone, android, com.emoji.keyboard.touchpal.customization, com.android.incallui, com.android.server.telecom, com.android.dialer, com.android.htcdialer, com.google.android.dialer, com.asus.asusincallui, com.device.lespago])
+04-10 18:08:21.112 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:08:21.250 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:08:21.250 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/exeReport
+04-10 18:08:21.251 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:08:21.251 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:08:21.251 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 212
+04-10 18:08:21.252 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:08:21.253 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"data":[{"extend":"[{\"isLock\":2,\"overdueDate\":1681119998000,\"amount\":100,\"afterDay\":0,\"beforeDay\":0}]","name":"labelPolicy","result":"1","value":1,"version":"1681121299981"}],"status":1,"taskId":40168}
+04-10 18:08:21.254 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000}
+04-10 18:08:21.255 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:300 ms
+04-10 18:08:21.255 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:09:21.251 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:29) pushNumber = 50
+04-10 18:09:21.251 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:30) Emq onMessageReceived==> {"message":1,"taskId":"40169"}
+04-10 18:09:21.252 18915 31162 D |MDM3.3-Log|: (EmqPushListener.java:45) type = 1; taskId = 40169
+04-10 18:09:21.252 18915 31162 D |MDM3.3-Log|: (TaskWork.java:135) 请求任务接口--->40169
+04-10 18:09:21.301 18915 23239 D |MDM3.3-Log|: (Worker.java:85) TaskWork trigger by push doWork------------------pool-17-thread-3
+04-10 18:09:21.595 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:09:21.596 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/control
+04-10 18:09:21.597 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:09:21.597 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:09:21.598 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 31
+04-10 18:09:21.599 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:09:21.600 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"taskId":40169,"intfType":"1"}
+04-10 18:09:21.602 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000,"data":[{"extend":[{"isLock":1,"overdueDate":1681119998000,"amount":100.0,"afterDay":0,"beforeDay":0}],"name":"labelPolicy","value":"1","version":1681121360876}],"version":40169,"taskId":40169}
+04-10 18:09:21.603 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:286 ms
+04-10 18:09:21.605 18915 23239 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:09:21.612 18915 23239 D |MDM3.3-Log|: (TaskWork.java:356) TaskWork response success,send live data message--
+04-10 18:09:21.614 18915 18915 D |MDM3.3-Log|: (EcmService.java:254) get ACTION_DATA TaskResponse---------
+04-10 18:09:21.615 18915 18915 D |MDM3.3-Log|: (CommandAdapter.java:68) executeAction ==> TaskResponse{result=1000, taskId=40169, md5='', data=[TaskData{name='labelPolicy', value=1, version=1681121360876, extend='[{"isLock":1,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}], deviceData=null}
+04-10 18:09:21.619 18915 21183 D |MDM3.3-Log|: (CommandAdapter.java:90) filter task true ->TaskData{name='labelPolicy', value=1, version=1681121360876, extend='[{"isLock":1,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}
+04-10 18:09:21.635 18915 21183 D |MDM3.3-Log|: (CommandAdapter.java:111) saveTasks==================40169
+04-10 18:09:21.638 18915 21183 I |MDM3.3-Log|: (LespagoLockUtils.java:80) overdue unlock
+04-10 18:09:21.639 18915 21183 D |MDM3.3-Log|: (KioskUtils.java:123) 执行unLock，alertId=0  alertType=101
+04-10 18:09:21.641 18915 21183 D |MDM3.3-Log|: (KioskUtils.java:130) push 触发的解锁，直接执行
+04-10 18:09:21.642 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:09:21.646 18915 18915 D |MDM3.3-Log|: (KioskUtils.java:161) execute unlock
+04-10 18:09:21.649 18915 18915 E |MDM3.3-Log|: (KioskUtils.java:286) checkAppKiosk===>null22
+04-10 18:09:21.649 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1239) clearKiosk(com.easycontrol.emm)
+04-10 18:09:21.717 18915 18915 D |MDM3.3-Log|: (EcmService.java:241) getReportTasks onChanged-----
+04-10 18:09:21.731 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:09:21.747 18915 18915 E |MDM3.3-Log|: (ActivityThread.java:4726) DeviceAdminReceiver#receive action:android.app.action.LOCK_TASK_EXITING
+04-10 18:09:21.856 18915 19149 D |MDM3.3-Log|: (ReportWork.java:57) report worker  doWork--------0
+04-10 18:09:22.093 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:09:22.093 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/exeReport
+04-10 18:09:22.093 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:09:22.093 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:09:22.094 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 212
+04-10 18:09:22.094 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:09:22.094 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"data":[{"extend":"[{\"isLock\":1,\"overdueDate\":1681119998000,\"amount\":100,\"afterDay\":0,\"beforeDay\":0}]","name":"labelPolicy","result":"1","value":1,"version":"1681121360876"}],"status":1,"taskId":40169}
+04-10 18:09:22.095 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000}
+04-10 18:09:22.095 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:231 ms
+04-10 18:09:22.096 18915 19149 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:09:22.402 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:29) pushNumber = 51
+04-10 18:09:22.402 18915 31162 D |MDM3.3-Log_HPushLog|: (EmqPushListener.java:30) Emq onMessageReceived==> {"message":1,"taskId":"40170"}
+04-10 18:09:22.403 18915 31162 D |MDM3.3-Log|: (EmqPushListener.java:45) type = 1; taskId = 40170
+04-10 18:09:22.404 18915 31162 D |MDM3.3-Log|: (TaskWork.java:135) 请求任务接口--->40170
+04-10 18:09:22.449 18915 22818 D |MDM3.3-Log|: (Worker.java:85) TaskWork trigger by push doWork------------------pool-17-thread-2
+04-10 18:09:22.786 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:09:22.786 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/control
+04-10 18:09:22.787 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:09:22.788 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:09:22.789 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 31
+04-10 18:09:22.789 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:09:22.790 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"taskId":40170,"intfType":"1"}
+04-10 18:09:22.799 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000,"data":[{"extend":[{"isLock":2,"overdueDate":1681119998000,"amount":100.0,"afterDay":0,"beforeDay":0}],"name":"labelPolicy","value":"1","version":1681121362052}],"version":40170,"taskId":40170}
+04-10 18:09:22.801 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:333 ms
+04-10 18:09:22.802 18915 22818 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------
+04-10 18:09:22.810 18915 22818 D |MDM3.3-Log|: (TaskWork.java:356) TaskWork response success,send live data message--
+04-10 18:09:22.811 18915 18915 D |MDM3.3-Log|: (EcmService.java:254) get ACTION_DATA TaskResponse---------
+04-10 18:09:22.811 18915 18915 D |MDM3.3-Log|: (CommandAdapter.java:68) executeAction ==> TaskResponse{result=1000, taskId=40170, md5='', data=[TaskData{name='labelPolicy', value=1, version=1681121362052, extend='[{"isLock":2,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}], deviceData=null}
+04-10 18:09:22.825 18915 19094 D |MDM3.3-Log|: (CommandAdapter.java:90) filter task true ->TaskData{name='labelPolicy', value=1, version=1681121362052, extend='[{"isLock":2,"overdueDate":1681119998000,"amount":100,"afterDay":0,"beforeDay":0}]'}
+04-10 18:09:22.832 18915 19094 D |MDM3.3-Log|: (CommandAdapter.java:111) saveTasks==================40170
+04-10 18:09:22.833 18915 19094 I |MDM3.3-Log|: (LespagoLockUtils.java:86) overdue lock
+04-10 18:09:22.834 18915 19094 D |MDM3.3-Log|: (KioskUtils.java:59) execute lock(alertId->0,alertType->101)
+04-10 18:09:22.834 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:09:22.848 18915 19094 D |MDM3.3-Log|: (KioskUtils.java:78) update==>LockRecord{id=1, alertId=0, alertType=101, lock=1, lockTime=1681121362836}
+04-10 18:09:22.849 18915 18915 D |MDM3.3-Log|: (KioskUtils.java:91) lock execute----
+04-10 18:09:22.849 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1177) setKiosk(com.easycontrol.emm)
+04-10 18:09:22.933 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:1202) setKiosk complete-----
+04-10 18:09:22.950 18915 23271 D |MDM3.3-Log|: (ReportWork.java:57) report worker  doWork--------0
+04-10 18:09:22.984 18915  2487 D |MDM3.3-Log|: (KioskActivity.java:100) LockRecord has data ,execute lock
+04-10 18:09:22.986 18915 18915 D |MDM3.3-Log_GatewayImpl|: (DevicePolicyManagerGatewayImpl.java:853) setLockTaskFeatures(GLOBAL_ACTIONS|SYSTEM_INFO)
+04-10 18:09:23.041 18915 18915 D |MDM3.3-Log|: (EcmService.java:241) getReportTasks onChanged-----
+04-10 18:09:23.068 18915 18915 E |MDM3.3-Log|: (ActivityThread.java:4726) DeviceAdminReceiver#receive action:android.app.action.LOCK_TASK_ENTERING
+04-10 18:09:23.068 18915 18915 D |MDM3.3-Log|: (KioskActivity.java:136) switchByCommand====>kiosk_mode_lock
+04-10 18:09:23.069 18915 18915 D |MDM3.3-Log|: (KioskActivity.java:197) 切换fragment---com.easycontrol.dpc.kiosk.LockFragment
+04-10 18:09:23.133 18915 18915 I |MDM3.3-Log|: (EcmService.java:238) empty report list-----
+04-10 18:09:23.333 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request Start----------
+04-10 18:09:23.333 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) POST https://gsapi.lespay.mx/mdm-api/client/exeReport
+04-10 18:09:23.333 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) mdmHeader: {"projectCode":"lisheng@123_6jW0GM","appCode":231,"deviceId":"869937054018794","model":"CMA-LX3","brand":"HONOR"}
+04-10 18:09:23.334 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Type: application/json; charset=utf-8
+04-10 18:09:23.334 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Content-Length: 212
+04-10 18:09:23.335 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) User-Agent: okhttp/4.9.0
+04-10 18:09:23.336 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Params:{"data":[{"extend":"[{\"isLock\":2,\"overdueDate\":1681119998000,\"amount\":100,\"afterDay\":0,\"beforeDay\":0}]","name":"labelPolicy","result":"1","value":1,"version":"1681121362052"}],"status":1,"taskId":40170}
+04-10 18:09:23.337 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Response Body:{"result":1000}
+04-10 18:09:23.338 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) Time:381 ms
+04-10 18:09:23.338 18915 23271 D |MDM3.3-Log_LogInterceptor|: (LogInterceptor.java:38) ----------Request End----------

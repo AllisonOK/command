@@ -5,3 +5,22 @@
 gradle.properties、local.properties文件中定义的属性或变量
 	https://blog.csdn.net/u013347784/article/details/104678957
 	
+3---liulishuodownloader下载问题
+	W/FileDownloader.DownloadServiceNotConnectedHelper: request get the status for the task[-1280906182] in the download service, but the download service isn't connected yet.
+    You can use FileDownloader#isServiceConnected() to check whether the service has been connected, 
+    besides you can use following functions easier to control your code invoke after the service has been connected: 
+    1. FileDownloader#bindService(Runnable)
+    2. FileDownloader#insureServiceBind()
+    3. FileDownloader#insureServiceBindAsync()
+	
+4--- ----------Request Start----------
+	行   178: 11-14 14:56:06.261  1822  3567 D |MDM3.4-Log_LogInterceptor|: (LogInterceptor.java:67) POST https://test-api.easycontrol.io/mdm-api/client/checkUploadFile
+	行   179: 11-14 14:56:06.261  1822  3567 D |MDM3.4-Log_LogInterceptor|: (LogInterceptor.java:74) mdmHeader: {"projectCode":"beta34_6LLi72","appCode":223,"deviceId":"0123456789ABCDEF","model":"A100","brand":"Blackview"}
+	行   180: 11-14 14:56:06.261  1822  3567 D |MDM3.4-Log_LogInterceptor|: (LogInterceptor.java:74) Content-Type: application/json; charset=utf-8
+	行   181: 11-14 14:56:06.262  1822  3567 D |MDM3.4-Log_LogInterceptor|: (LogInterceptor.java:74) Content-Length: 143
+	行   182: 11-14 14:56:06.262  1822  3567 D |MDM3.4-Log_LogInterceptor|: (LogInterceptor.java:74) User-Agent: okhttp/4.9.0
+	行   183: 11-14 14:56:06.263  1822  3567 D |MDM3.4-Log_LogInterceptor|: (LogInterceptor.java:83) Params:{"fileFolder":"/storage/emulated/0/你好哇","taskId":0,"uploadFileParam":[{"fileMD5":"ed38c02e7c55d4349dce292e0e6e017e","fileName":"2.apk"}]}
+	行   184: 11-14 14:56:06.265  1822  3567 D |MDM3.4-Log_LogInterceptor|: (LogInterceptor.java:97) Response Body:{"result":500,"data":"system error"}
+	行   185: 11-14 14:56:06.265  1822  3567 D |MDM3.4-Log_LogInterceptor|: (LogInterceptor.java:98) Time:101 ms
+	
+	
